@@ -10,7 +10,13 @@ function errorHandler(error) {
 }
 
 function convertText(){
-    const url=`${serverURL}?text=${input.value}`;
+    var ipText=input.value;
+    if(ipText==""){
+        alert("Please enter some text");
+        return;
+    }
+
+    const url=`${serverURL}?text=${ipText}`;
     fetch(url)
         .then(res => res.json())
         .then(json => {
