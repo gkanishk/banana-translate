@@ -1,0 +1,65 @@
+@import url(//db.onlinewebfonts.com/c/5030122d9950ce845bc8b45d5b18252d?family=HWTArtz);
+
+*{
+    --primary-black: #050505;
+    --primary-yellow: #FAC33C;
+    margin: 0;
+    font-family: "HWTArtz";
+}
+
+body{
+    background-color: var(--primary-black);
+    color: #FAC33C;
+    display: grid;
+    place-content: center;
+    padding: 1rem;
+    row-gap: 0.8rem;
+}
+
+h1{
+    font-size: 4em;
+}
+
+.inputtext{
+    border-radius: 9px;
+    border-color: var(--primary-yellow);
+    border-width: medium;
+    background-color: rgb(237, 236, 236);
+    outline: none;
+}
+
+.inputtext::placeholder {
+    font-weight: lighter;
+  }
+
+button{
+    padding: 1rem 2rem;
+    width: max-content;
+    font-weight: 700;
+    font-size: large;
+    background-color: transparent;
+    color: var(--primary-yellow);
+    border-radius: 7px;
+    border-color: var(--primary-yellow);
+    margin: auto;
+    outline: none;
+}
+
+button:hover{
+    background-color: var(--primary-yellow);
+    color: var(--primary-black);
+}
+
+.info{
+    width: 35vw;
+    text-align: justify;
+}
+
+@media (max-width:660px){
+    h1{
+        font-size: 3em;
+    }
+    .info{
+        width: 90vw;
+    }
+}
